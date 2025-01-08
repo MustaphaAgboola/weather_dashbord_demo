@@ -11,14 +11,14 @@ In this project, we'll build a weather dashboard that uses the OpenWeather API t
 
 1. Create an AWS account if you don't have one
 2. Create an IAM user with S3 access
-3. Generate access keys and add them to your `.env` file
+3. Generate access keys to be added to your `.env` file
 4. Ensure your IAM user has appropriate S3 permissions:
    - s3:CreateBucket
    - s3:PutObject
    - s3:GetObject
    - s3:ListBucket
 
-### Clone the Repository
+### Clone this Repository
 
 ```bash
 git clone https://github.com/MustaphaAgboola/weather_dashbord_demo
@@ -76,10 +76,6 @@ The application will:
 1. Create an S3 bucket if it doesn't exist
 2. Fetch weather data for configured cities
 3. Save the data to your S3 bucket
-
-## Technologies Used
-
-[Rest of the document remains the same...]
 
 ## Technologies Used
 
