@@ -11,7 +11,7 @@ In this project, we'll build a weather dashboard that uses the OpenWeather API t
 
 1. Create an AWS account if you don't have one
 2. Create an IAM user with S3 access
-3. Generate access keys to be added to your `.env` file
+3. Generate access keys
 4. Ensure your IAM user has appropriate S3 permissions:
    - s3:CreateBucket
    - s3:PutObject
@@ -51,7 +51,6 @@ pip install -r requirements.txt
 
 1. Sign up for an OpenWeather account at [OpenWeather](https://openweathermap.org/api)
 2. Generate an API key
-3. Add the API key to your `.env` file
 
 
 ### Configure Environment Variables
@@ -60,14 +59,14 @@ pip install -r requirements.txt
 2. Add the following environment variables:
 ```bash
 echo "OPENWEATHER_API_KEY=your_openweather_api_key_here" >> .env
-echo "AWS_BUCKET_NAME=weather-dashboard${RANDOM}" >> .env
+echo "AWS_BUCKET_NAME=weather-dashboard-${RANDOM}" >> .env
 ```
 
 
 ### Running the Application
 
 ```bash
-python weather_dashboard.py
+python weather_dashbord.py
 ```
 
 The application will:
@@ -84,11 +83,6 @@ The application will:
 - requests library
 - python-dotenv
 
-## Prerequisites
-
-1. An OpenWeather API key
-2. AWS credentials configured
-3. Python environment with required packages installed
 
 ## Project Structure
 
