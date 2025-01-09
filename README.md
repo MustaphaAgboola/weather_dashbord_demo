@@ -17,6 +17,8 @@ In this project, we'll build a weather dashboard that uses the OpenWeather API t
    - s3:PutObject
    - s3:GetObject
    - s3:ListBucket
+5. Configure AWS CLI on your terminal
+ [For more information visit AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html)
 
 ### Clone this Repository
 
@@ -56,13 +58,9 @@ pip install -r requirements.txt
 
 1. Create a `.env` file in the project root directory
 2. Add the following environment variables:
-
-```env
-OPENWEATHER_API_KEY=your_openweather_api_key_here
-AWS_BUCKET_NAME=your_s3_bucket_name_here
-AWS_ACCESS_KEY_ID=your_aws_access_key_here
-AWS_SECRET_ACCESS_KEY=your_aws_secret_key_here
-AWS_DEFAULT_REGION=your_preferred_region
+```bash
+echo "OPENWEATHER_API_KEY=your_openweather_api_key_here" >> .env
+echo "AWS_BUCKET_NAME=weather-dashboard${RANDOM}" >> .env
 ```
 
 
